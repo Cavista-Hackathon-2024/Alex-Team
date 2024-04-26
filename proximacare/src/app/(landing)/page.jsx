@@ -2,12 +2,14 @@
 import styled from "styled-components"
 import Head from "./Head"
 import Hero from "./Hero"
+import Foot from "./Foot"
 
 const Landing=  () => {
     return(
         <Homecont>
             <Head/>
             <Hero/>
+            <Foot/>
         </Homecont>
     )
 }
