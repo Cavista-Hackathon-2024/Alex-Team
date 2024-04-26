@@ -5,8 +5,9 @@ function Hero() {
   return (
     <Herocont>
       <Herowrap>
-        <p>Join the Fight Against Cancer:</p>
-        <p>ProximaCare - Your Partner in Prevention and Early Detection</p>
+        <div className="hr1">
+        <p>Join the Fight Against <br/>Cancer:</p>
+        <p>ProximaCare - Your Partner in Prevention and Early Detection</p></div>
       </Herowrap>
     </Herocont>
   )
@@ -24,4 +25,8 @@ const Herowrap = styled.div`
 width: 92%;
 height: 100%;
 background: green;
+
+.hr1{
+width: 92%;
+}
 `
