@@ -1,17 +1,19 @@
 'use client'
 import styled from "styled-components"
+import logo from '../../../public/logo.svg'
+import Image from "next/image"
 
 function Head() {
   return (
     <Headcont>
       <Headwrap>
         <Hd1>
-          <p className="logo">PROXIMACARE</p>
+          <Image src={logo} alt='PROXIMACARE' className="logo"/>
         </Hd1>
         <Hd2>
-          <p className="midhd">Home</p>
-          <p className="midhd">About</p>
-          <p className="midhd">Blog</p>
+          <p>Home</p>
+          <p>About</p>
+          <p>Blog</p>
         </Hd2>
         <Hd3>
           <p className="log_in">Login</p>
@@ -48,8 +50,7 @@ color: #5c4a6d;
 margin-left: 60px;
 
 .logo{
-  font-size: 20px;
-  font-weight: 700;
+  height: 100%;
 }
 `
 const Hd2 = styled.div`
@@ -60,9 +61,6 @@ justify-content: space-around;
 align-items: center;
 color: #5c4a6d;
 
-.midhd{
-
-}
 `
 const Hd3 = styled.div`
 display: flex;

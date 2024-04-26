@@ -7,7 +7,6 @@ function Foot() {
       <Footwrap>            
         <marquee className='futmuv'>
             <p>invite friends to get an extra 50XP</p>
-            <p>invite friends to get an extra 50XP</p>
         </marquee>
       </Footwrap>
     </Footcont>
@@ -23,7 +22,6 @@ display: flex;
 justify-content: center;
 align-items: flex-end;
 color: #fff;
-margin-top: -2px;
 
 `
 const Footwrap = styled.div`
