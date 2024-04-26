@@ -1,8 +1,10 @@
-import { Button } from '@/components/ui/button'
-
-function Landing () {
+const Landing=  () => {
     return(
-        <Button>Test</Button>
+        <div>
+            <div>
+                <h1>proximacare</h1>
+            </div>
+        </div>
     )
 }
 
