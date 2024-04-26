@@ -32,6 +32,9 @@ width: 100%;
 height: 80%;
 display: flex;
 justify-content: center;
+
+// @media screen and (max-width: 1280px){}
+
 `
 const Herowrap = styled.div`
 width: 92%;
