@@ -1,11 +1,20 @@
+'use client'
+import styled from "styled-components"
+import Head from "./Head"
+import Hero from "./Hero"
+
 const Landing=  () => {
     return(
-        <div>
-            <div>
-                <h1>proximacare</h1>
-            </div>
-        </div>
+        <Homecont>
+            <Head/>
+            <Hero/>
+        </Homecont>
     )
 }
 
 export default Landing;
+
+const Homecont = styled.div`
+width: 100%;
+height: 100vh;
+`
