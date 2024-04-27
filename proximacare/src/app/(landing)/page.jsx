@@ -1,8 +1,11 @@
-import { Button } from '@/components/ui/button'
+import Quest from "../(main)/quests/quests";
+import Feature from "./components/featureSection";
 
 function Landing () {
     return(
-        <Button>Test</Button>
+
+        // <Feature/>
+        <Quest/>
     )
 }
 
