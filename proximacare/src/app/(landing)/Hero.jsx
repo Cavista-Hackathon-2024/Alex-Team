@@ -51,11 +51,10 @@ margin-top: 55px;
   font-family: Source Sans 3;
   font-size: 32px;
   font-weight: 550;
-  line-height: 2rem;
+  line-height: 2.5rem;
   color: #fff;
 }
 .fite2{
-  font-family: Source Sans 3;
   font-size: 23px;
   font-weight: light;
   line-height: 2rem;
@@ -78,29 +77,31 @@ margin-top: 55px;
     align-items: center;
     border: 5px solid grey;
     gap: 10px;
+    border-radius: 4px;
+
 }
 
 .hapyou{
+  color: #6c6868;
   font-size: 12px;
   margin-top: 30px;
   margin-left: 20px;
+  font-weight: 600;
 }
 
 .but{
   margin-left: 20px;
   margin-top: 30px;
   width: 30%;
-  height: 5.5%;
   background: #5c4a6d;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 4px;
   color: #fff;
+  padding: 8px;
 }
 .whil{
   width: 45%;
-
-
 }
 `

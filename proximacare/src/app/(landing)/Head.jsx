@@ -32,6 +32,8 @@ height: 10%;
 display: flex;
 justify-content: center;
 align-items: center;
+font-size: 14px;
+font-famliy: source sans 3;
 `
 const Headwrap = styled.div`
 width: 100%;
@@ -75,10 +77,12 @@ margin-right: 40px;
 }
 .sign_up{
   width: 50%;
-  height: 30px;
+  padding: 8px;
   color: #fff;
   background: #5c4a6d;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
 }
+
+
 `
