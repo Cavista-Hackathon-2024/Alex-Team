@@ -5,11 +5,7 @@ import FirstAidKit from "../../../../public/FirstAidKit.png";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Cards } from "./cards";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
 // import { Input } from "@/components/ui/input";
 import XP from "../../../../public/xp.svg";
 import Star from "../../../../public/star.svg";
@@ -18,8 +14,8 @@ import Friends from "../../../../public/friends.svg";
 import { SignedIn, UserButton, UserProfile } from "@clerk/nextjs";
 import { useState } from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import Navbar from "../dashboard/navbar"
-import Chatbot from './chatbot.js'
+import Navbar from "../dashboard/navbar";
+
 const Dashboard = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +28,7 @@ const Dashboard = () => {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <section id="dashboard">
         <div className="md:mt-20 mt-8 md:ml-[8.5rem] ml-[1rem] ">
           <span className="md:text-[20px] text-[18px] font-medium">
@@ -45,7 +41,6 @@ const Dashboard = () => {
               Your last screening date:
             </span>
             <span className="text-[#767478]">24th April, 2024</span>
-            <Chatbot />
           </div>
         </div>
       </section>
@@ -128,23 +123,30 @@ const Dashboard = () => {
             </CardContent>
           </Card>
           <Link>
-          <Card role="button" className="w-[220px] h-[220px] flex items-center">
-            <CardContent className="ml-12">
-              <Image src={Friends} alt="star icon" className="w-10 h-10 ml-2" />
-              <CardDescription className="flex justify-center text-center"></CardDescription>
-              <div className="mt-1 ml-6">
-                <span className="text-center text-[20px] text-[#000000] font-bold space-y-3">
-                  5
-                </span>
-              </div>
+            <Card
+              role="button"
+              className="w-[220px] h-[220px] flex items-center"
+            >
+              <CardContent className="ml-12">
+                <Image
+                  src={Friends}
+                  alt="star icon"
+                  className="w-10 h-10 ml-2"
+                />
+                <CardDescription className="flex justify-center text-center"></CardDescription>
+                <div className="mt-1 ml-6">
+                  <span className="text-center text-[20px] text-[#000000] font-bold space-y-3">
+                    5
+                  </span>
+                </div>
 
-              <div className="mt-1 -ml-4">
-                <span className="text-[15px] text-[#767478] font-normal space-y-2 mt-50">
-                  ChatBuddy
-                </span>
-              </div>
-            </CardContent>
-          </Card>
+                <div className="mt-1 -ml-4">
+                  <span className="text-[15px] text-[#767478] font-normal space-y-2 mt-50">
+                    ChatBuddy
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
           </Link>
         </div>
       </section>
