@@ -19,6 +19,7 @@ import { SignedIn, UserButton, UserProfile } from "@clerk/nextjs";
 import { useState } from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import Navbar from "../dashboard/navbar"
+import Chatbot from './chatbot.js'
 const Dashboard = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +45,7 @@ const Dashboard = () => {
               Your last screening date:
             </span>
             <span className="text-[#767478]">24th April, 2024</span>
+            <Chatbot />
           </div>
         </div>
       </section>
